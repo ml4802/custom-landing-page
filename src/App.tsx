@@ -28,12 +28,15 @@ const App: React.FC = () => {
         );
       case "HOME":
         return (
-          <ResumeSection
-            imageUrl="mingLiu.png" // Update this path if necessary
-            altText="Failed to load image, but I assure you I'm good looking"
-            caption="Me"
-            resumePoints={resumePoints}
-          ></ResumeSection>
+          <>
+            <ResumeSection
+              imageUrl="mingLiu.png" // Update this path if necessary
+              altText="Failed to load image, but I assure you I'm good looking"
+              caption="Me"
+              resumePoints={resumePoints}
+            ></ResumeSection>
+            <Footer bottomText="🚧 Under construction, improvements daily. Made with React and JS <3" />
+          </>
         );
       case "RESUME":
         return (
@@ -43,12 +46,15 @@ const App: React.FC = () => {
         );
       default:
         return (
-          <ResumeSection
-            imageUrl="mingLiu.png" // Update this path if necessary
-            altText="Failed to load image, but I assure you I'm good looking"
-            caption="Me"
-            resumePoints={resumePoints}
-          ></ResumeSection>
+          <>
+            <ResumeSection
+              imageUrl="mingLiu.png" // Update this path if necessary
+              altText="Failed to load image, but I assure you I'm good looking"
+              caption="Me"
+              resumePoints={resumePoints}
+            ></ResumeSection>
+            <Footer bottomText="🚧 Under construction, improvements daily. Made with React and JS <3" />
+          </>
         );
     }
   }
@@ -64,8 +70,6 @@ const App: React.FC = () => {
         emailLink={"mailto:mingliu232@gmail.com"} // Update the emailLink prop
       />
       {setPageVisFunc()}
-      <div></div>
-      <Footer bottomText="🚧 Under construction, improvements daily. Made with React and JS <3" />
     </>
   );
 };
