@@ -46,6 +46,7 @@ html, body {
     height: 8vw; /* Increased height for a thicker navbar */
     padding: 0 2vw; /* Padding to space out from edges */
     margin-left: 10vw;
+
 }
 
 .navbar-brand-custom {
@@ -65,6 +66,7 @@ html, body {
 .nav-link-custom {
     color: rgba(0, 0, 0, 0.387); /* Light gray text color */
     font-size: 3.0vw; /* Larger font size */
+    white-space: nowrap; 
     font-weight: bold; /* Bold text */
     padding: 1.5vw 2vw; /* Larger padding for clickable area */
     border: 0.2vw solid transparent; /* Transparent border initially */
