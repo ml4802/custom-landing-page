@@ -33,6 +33,7 @@ html, body {
     background-color: white; /* Dark background for the navbar */
     height: 8vw; /* Increased height for a thicker navbar */
     padding: 0 2vw; /* Padding to space out from edges */
+    margin: 0 auto; /* Center the element horizontally */
 }
 
 .navbar-brand-custom {
