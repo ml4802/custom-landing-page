@@ -74,20 +74,16 @@ function NavBar({
               Resume
             </Nav.Link>
             <NavDropdown
-              title="Dropdown"
+              title="Socials"
               id="basic-nav-dropdown"
               className="nav-dropdown-custom"
             >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Something else here
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Email</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">LinkedIn</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Idk</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                What else do I add
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

@@ -1,6 +1,6 @@
 /* Navbar Styles */
 .navbar-custom {
-    background-color: white; /* Dark background for the navbar */
+    background-color: #f9f9f9;; /* Dark background for the navbar */
     height: 80px; /* Increased height for a thicker navbar */
     padding: 0 30px; /* Padding to space out from edges */
   }
@@ -56,7 +56,7 @@
     justify-content: space-between;
     margin: 30px 0; /* Increased margin */
     padding: 30px; /* Increased padding */
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: white; /* Light background for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for the section */
     border-radius: 12px; /* Larger rounded corners */
   }
@@ -131,3 +131,10 @@
     font-family: 'Arial', sans-serif; /* Clean, modern font */
   }
   
+  /* Footer Text */
+  .footer-text{
+  position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    }

@@ -3,6 +3,7 @@ import "./App.css"; // Import your global CSS file
 import Navbar from "./components/NavBar";
 import ResumeSection from "./components/ResumeSection";
 import PdfDisplay from "./components/PdfDisplay";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   const resumePoints = [
@@ -10,7 +11,7 @@ const App: React.FC = () => {
     "I would do really great at your company",
     "Please, I've been unemployed so long I forget what it's like to not be",
     "gonna make this look better i promise zac/omkar",
-    "click on the resume tab to see resume and click on it again to make it go away (took me an hour)",
+    "Last version 12:10am wed aug 7",
   ];
   const [homeVis, setHomeVis] = useState(true);
   const [projectVis, setProjectVis] = useState(false);
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           resumePoints={resumePoints}
         ></ResumeSection>
       );
+    if (projectVis) return <>Link to some of my projets I guess</>;
   }
 
   return (
@@ -45,7 +47,8 @@ const App: React.FC = () => {
         resumeHook={setResumeVis}
       />
       {setPageVisFunc()}
-      <h1>Website under construction</h1>
+      <div></div>
+      <Footer bottomText="🚧 Still under construction, improvements daily hopefully made with React 🚧" />
     </>
   );
 };
