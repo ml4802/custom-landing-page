@@ -9,7 +9,8 @@ const App: React.FC = () => {
     "Hi there I'm literally about to be 24",
     "I would do really great at your company",
     "Please, I've been unemployed so long I forget what it's like to not be",
-    "I can gurantee I can speel",
+    "gonna make this look better i promise zac/omkar",
+    "click on the resume tab to see resume and click on it again to make it go away (took me an hour)",
   ];
   const [homeVis, setHomeVis] = useState(false);
   const [projectVis, setProjectVis] = useState(false);
