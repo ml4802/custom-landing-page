@@ -60,19 +60,21 @@ html, body {
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
     margin-right: 20px; /* Add horizontal spacing */
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(1); /* Scale the element back to its original size */
+}
+.nav-link-custom:hover {
+    color: black; /* Dark text color on hover */
+    border-bottom: 2px solid black; /* Dark border color on hover */
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(0.99); /* Scale the element on hover */
 }
 
-.nav-link-custom:hover,
-.nav-link-custom:focus {
-    color: black; /* Dark text color on hover or focus */
-    border-bottom: 2px solid black; /* Dark border color on hover or focus */
-    transition: border-color 0.5s ease; /* Smooth transition for border color */
-}
 .nav-link-custom:active,
 .nav-link-custom:focus {
     border-bottom: 2px solid black; /* Black border on active and focus */
-}
-
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(0.9); /* Scale the element on hover */
 }
 
 /* Resume Section Styles */
