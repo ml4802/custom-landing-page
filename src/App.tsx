@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css"; // Import your global CSS file
 import Navbar from "./components/NavBar";
 import ResumeSection from "./components/ResumeSection";
@@ -14,10 +14,11 @@ const App: React.FC = () => {
     "Last version 12:10am wed aug 7",
   ];
 
-  // The pages can be Home, Projects, Resume
+  // The states can be updated to include more pages
   const [pageVis, setPageVis] = useState("Home");
 
   function setPageVisFunc() {
+    // This function will return the correct page based on the state
     switch (pageVis) {
       case "PROJECT":
         return (
@@ -57,7 +58,7 @@ const App: React.FC = () => {
       <Navbar
         pageVis={pageVis}
         setPageVis={setPageVis}
-        githubLink={"https://github.com/ml4802"}
+        paperLink={"https://dl.acm.org/doi/abs/10.1145/3576914.3589561"}
         googleDriveLink={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
         linkedinLink={"https://www.linkedin.com/in/mingliu232/"}
         emailLink={"mailto:mingliu232@gmail.com"} // Update the emailLink prop
