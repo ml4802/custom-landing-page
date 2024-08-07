@@ -8,6 +8,7 @@ import "../App.css"; // Import your global CSS file
 interface Props {
   pageVis: string;
   setPageVis: React.Dispatch<React.SetStateAction<string>>;
+  setPrevPageVis: React.Dispatch<React.SetStateAction<string>>;
   paperLink: string;
   googleDriveLink: string;
   linkedinLink: string;
@@ -16,6 +17,7 @@ interface Props {
 
 function NavBar({
   setPageVis,
+  setPrevPageVis,
   paperLink,
   googleDriveLink,
   linkedinLink,
@@ -24,6 +26,7 @@ function NavBar({
   const [activeLink, setActiveLink] = useState<string>("HOME");
 
   const handleLinkClick = (link: string) => {
+    setPrevPageVis(activeLink);
     setPageVis(link);
     setActiveLink(link);
   };

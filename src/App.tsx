@@ -16,9 +16,13 @@ const App: React.FC = () => {
 
   // The states can be updated to include more pages
   const [pageVis, setPageVis] = useState("Home");
+  const [prevPageVis, setPrevPageVis] = useState("Home");
 
   function setPageVisFunc() {
+    // console.log("PageVis: " + pageVis);
+    // console.log("PrevPageVis: " + prevPageVis);
     // This function will return the correct page based on the state
+
     switch (pageVis) {
       case "PROJECT":
         return (
@@ -62,6 +66,7 @@ const App: React.FC = () => {
   return (
     <>
       <Navbar
+        setPrevPageVis={setPrevPageVis}
         pageVis={pageVis}
         setPageVis={setPageVis}
         paperLink={"https://dl.acm.org/doi/abs/10.1145/3576914.3589561"}

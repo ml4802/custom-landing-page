@@ -91,12 +91,23 @@ html, body {
     border-radius: 20px; /* Larger rounded corners */
     max-width: 80%; /* Adjust the width as needed */
     position: relative; /* Ensure it can be positioned centrally */
-    animation: slideInFromBottom 1s ease-out; /* Apply the slide-in animation */
+    animation: slideInFromBottom 1s ease-out; /* Apply the slide-out animation */
 }
 
-.fadeOut {
+.resumeSectionSlideOut {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    margin: 30px auto; /* Center horizontally with margin */
+    padding: 30px; /* Increased padding */
+    background-color: white; /* Light background for contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow for the section */
+    border-radius: 20px; /* Larger rounded corners */
+    max-width: 80%; /* Adjust the width as needed */
+    position: relative; /* Ensure it can be positioned centrally */
     animation: slideOutToBottom 1s ease-out; /* Apply the slide-out animation */
 }
+
 
 @keyframes slideOutToBottom {
     from {
