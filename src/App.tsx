@@ -15,8 +15,8 @@ const App: React.FC = () => {
     <div>
       <Navbar />
       <ResumeSection
-        imageUrl="public/mingLiu.png" // Update this path if necessary
-        altText="Dashing image of Ming that didn't load for some reason if you're seeing this"
+        imageUrl="../public/mingLiu.png" // Update this path if necessary
+        altText="didn't load for some reason"
         caption="Most recent photo of me"
         resumePoints={resumePoints}
       />
