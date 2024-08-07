@@ -16,6 +16,12 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
 }) => {
   return (
     <div className="resumeSection">
+      <div className="resumeRight">
+        <div className="photoRightContainer">
+          <img src={imageUrl} alt={altText} className="photoRightImage" />
+          {caption && <p className="photoRightCaption">{caption}</p>}
+        </div>
+      </div>
       <div className="resumeLeft">
         <h2>Resume Highlights</h2>
         <ul>
@@ -23,12 +29,6 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
             <li key={index}>{point}</li>
           ))}
         </ul>
-      </div>
-      <div className="resumeRight">
-        <div className="photoRightContainer">
-          <img src={imageUrl} alt={altText} className="photoRightImage" />
-          {caption && <p className="photoRightCaption">{caption}</p>}
-        </div>
       </div>
     </div>
   );
