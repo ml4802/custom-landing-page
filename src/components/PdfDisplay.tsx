@@ -1,21 +1,16 @@
-import React from "react";
 import "../App.css"; // Import the global CSS file
 
 interface Props {
-  resumeUrl: string; // URL of the resume
+  imageUrl: string; // URL of the image
 }
 
-function PdfDisplay({ resumeUrl }: Props) {
+function PdfDisplay({ imageUrl }: Props) {
   return (
-    <iframe
-      src={resumeUrl}
-      width="100%"
-      height="800px"
-      style={{ border: "none" }}
-    >
-      This browser does not support PDFs. Please download the PDF to view it:{" "}
-      <a href={resumeUrl}>Download PDF</a>.
-    </iframe>
+    <div className="resumeSection">
+      <div className="photoRightContainer">
+        <img src={imageUrl} alt="resume" className="photoRightImage" />
+      </div>
+    </div>
   );
 }
 

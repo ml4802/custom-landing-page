@@ -24,7 +24,7 @@
 
 /* Prevent scrollbars from appearing */
 html, body {
-    overflow: hidden;
+    
     height: 100%; /* Ensure the body takes full height of the viewport */
     margin: 0; /* Remove default margin */
 
@@ -37,7 +37,7 @@ html, body {
     }
     .navbar-brand-custom {
         color: black; /* Light gray text color */
-        font-size: 3.8rem; /* Larger font size */
+        font-size: 2.8rem; /* Larger font size */
         font-weight: bold; /* Bold text */
         margin-right: 20px; /* Add horizontal spacing */
     }
@@ -58,6 +58,17 @@ html, body {
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
         margin-right: 20px; /* Add horizontal spacing */
     }
+
+    .nav-link-custom:hover {
+        background-color: #f9f9f9; /* Light background on hover */
+        color: black; /* Dark text color on hover */
+        border-bottom: 2px solid black; /* Dark border color on hover */
+        transition: border-color 0.5s ease; /* Smooth transition for border color */
+    }
+    .nav-link-custom:active,
+    .nav-link-custom:focus {
+        border-bottom: 2px solid black; /* Black border on active and focus */
+    }
 }
 
 /* Resume Section Styles */
@@ -74,6 +85,7 @@ html, body {
     position: relative; /* Ensure it can be positioned centrally */
     animation: slideInFromBottom 1s ease-out; /* Apply the slide-in animation */
 }
+
 
 .resumeSection .resumeButton {
     font-size: 2.5rem; /* Larger font size for the resume button */
@@ -141,6 +153,7 @@ html, body {
     height: 100%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     pointer-events: none; /* Allow interactions with the image */
+    
 }
 
 .photoRightImage {
@@ -148,6 +161,7 @@ html, body {
     height: auto;
     border-radius: 20px; /* Larger rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shading */
+    
 }
 
 .photoRightCaption {

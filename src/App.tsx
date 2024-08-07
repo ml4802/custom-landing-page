@@ -20,28 +20,32 @@ const App: React.FC = () => {
   function setPageVisFunc() {
     switch (pageVis) {
       case "PROJECT":
-        return <>Link to some of my projects I guess</>;
+        return (
+          <h1>
+            This will be a 6 tiled type of thing with summaries of my projects
+          </h1>
+        );
       case "HOME":
         return (
           <ResumeSection
             imageUrl="mingLiu.png" // Update this path if necessary
-            altText="didn't load for some reason"
-            caption="Most recent photo of me"
+            altText="Failed to load image, but I assure you I'm good looking"
+            caption="Me"
             resumePoints={resumePoints}
           ></ResumeSection>
         );
       case "RESUME":
         return (
           <div>
-            <PdfDisplay resumeUrl="mingLiuResume.pdf" />
+            <PdfDisplay imageUrl="mingLiuResume.png" />
           </div>
         );
       default:
         return (
           <ResumeSection
             imageUrl="mingLiu.png" // Update this path if necessary
-            altText="didn't load for some reason"
-            caption="Most recent photo of me"
+            altText="Failed to load image, but I assure you I'm good looking"
+            caption="Me"
             resumePoints={resumePoints}
           ></ResumeSection>
         );
@@ -60,7 +64,7 @@ const App: React.FC = () => {
       />
       {setPageVisFunc()}
       <div></div>
-      <Footer bottomText="🚧 Still under construction, improvements daily hopefully made with React 🚧" />
+      <Footer bottomText="🚧 Still under construction improvements daily. Made with React and JS 🚧" />
     </>
   );
 };
