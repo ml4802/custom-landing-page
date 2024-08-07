@@ -1,0 +1,133 @@
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #333; /* Dark background for the navbar */
+    height: 80px; /* Increased height for a thicker navbar */
+    padding: 0 30px; /* Padding to space out from edges */
+  }
+  
+  .navbar-brand-custom {
+    color: #eee; /* Light gray text color */
+    font-size: 1.8rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .nav-link-custom {
+    color: #eee; /* Light gray text color */
+    font-size: 1.8rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 15px 25px; /* Larger padding for clickable area */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    margin-right: -2px; /* Remove space between buttons */
+  }
+  
+  .nav-link-custom:hover,
+  .nav-link-custom:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover/focus */
+    color: #000; /* Black text color on hover/focus */
+    border-color: #000; /* Black border color on hover/focus */
+  }
+  
+  .nav-dropdown-custom .dropdown-menu {
+    background-color: #333; /* Dark background for the dropdown menu */
+    color: #eee; /* Light gray text color */
+  }
+  
+  .nav-dropdown-custom .dropdown-item {
+    color: #eee; /* Light gray text color */
+  }
+  
+  .nav-dropdown-custom .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover */
+    color: #000; /* Black text color on hover */
+  }
+  
+  
+  
+  /* Resume Section Styles */
+  .resumeSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0; /* Increased margin */
+    padding: 30px; /* Increased padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for the section */
+    border-radius: 12px; /* Larger rounded corners */
+  }
+  
+  .resumeLeft {
+    flex: 1;
+    padding-right: 30px; /* Increased padding */
+  }
+  
+  .resumeRight {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .resumeLeft h2 {
+    font-size: 3rem; /* Much larger font size for the header */
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Dark text color for readability */
+    text-align: center; /* Center-align the header */
+    margin-bottom: 20px; /* Increased margin for spacing */
+  }
+  
+  .resumeLeft ul {
+    list-style-type: disc;
+    padding-left: 30px; /* Increased padding */
+    color: rgba(0, 0, 0, 0.8); /* Semi-opacity for modern look */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    line-height: 1.6; /* Increased line height for better readability */
+  }
+  
+  .resumeLeft li {
+    font-size: 1.8rem; /* Larger font size for list items */
+    margin-bottom: 10px; /* Closer spacing between list items */
+  }
+  
+  .photoRightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Use relative positioning for the pseudo-element */
+    max-width: 50%; /* Adjust as needed */
+    padding: 30px; /* Increased padding */
+    overflow: hidden; /* Ensure image does not overflow */
+  }
+  
+  .photoRightContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    pointer-events: none; /* Allow interactions with the image */
+  }
+  
+  .photoRightImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Larger rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shading */
+  }
+  
+  .photoRightCaption {
+    margin-top: 15px;
+    font-size: 1.5rem; /* Larger font size for the caption */
+    color: rgba(0, 0, 0, 0.7); /* Semi-opacity for modern look */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+  }
+  
