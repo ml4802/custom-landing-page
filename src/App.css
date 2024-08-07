@@ -27,6 +27,18 @@ html, body {
     height: 100%; /* Ensure the body takes full height of the viewport */
     margin: 0; /* Remove default margin */
 
+    @media (max-width: 768px) {
+        .navbar-links {
+            flex-direction: row;
+            align-items: flex-start;
+            margin-right: 0;
+        }
+
+        .nav-link-custom {
+            margin-right: 0;
+            margin-bottom: 1vw;
+        }
+    }
 
 /* Navbar Styles */
 .navbar-custom {
