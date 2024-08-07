@@ -1,3 +1,15 @@
+/* Keyframes for the slide-in animation */
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%); /* Start off-screen at the bottom */
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        transform: translateY(0); /* End at its original position */
+        opacity: 1; /* End with full opacity */
+    }
+}
+
 /* Prevent scrollbars from appearing */
 html, body {
     overflow: hidden;
@@ -9,10 +21,12 @@ html, body {
     background-color: #f9f9f9;; /* Dark background for the navbar */
     height: 120px; /* Increased height for a thicker navbar */
     padding: 0 30px; /* Padding to space out from edges */
+    
+    animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1);; /* Apply the slide-in animation */
   }
   
   .navbar-brand-custom {
-    color: gold; /* Light gray text color */
+    color: black; /* Light gray text color */
     font-size: 3.8rem; /* Larger font size */
     font-weight: bold; /* Bold text */
   }
@@ -23,7 +37,7 @@ html, body {
   }
   
   .nav-link-custom {
-    color: rgba(0, 0, 0, 0.518); /* Light gray text color */
+    color: rgba(0, 0, 0, 0.387); /* Light gray text color */
     font-size: 3.8rem; /* Larger font size */
     font-weight: bold; /* Bold text */
     padding: 15px 25px; /* Larger padding for clickable area */
@@ -36,8 +50,9 @@ html, body {
   .nav-link-custom:hover,
   .nav-link-custom:focus {
     background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover/focus */
-    color: black; /* Black text color on hover/focus */
-    border-color: #000; /* Black border color on hover/focus */
+    color: rgba(0, 0, 0, 0.836); /* Black text color on hover/focus */
+    border-bottom-color: black;
+    
   }
   
   .nav-dropdown-custom .dropdown-menu {
@@ -54,19 +69,9 @@ html, body {
     color: #000; /* Black text color on hover */
   }
   
-  
-  
-/* Keyframes for the slide-in animation */
-@keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%); /* Start off-screen at the bottom */
-        opacity: 0; /* Start with 0 opacity */
-    }
-    to {
-        transform: translateY(0); /* End at its original position */
-        opacity: 1; /* End with full opacity */
-    }
 }
+  
+
 
 /* Resume Section Styles */
 .resumeSection {
@@ -80,7 +85,7 @@ html, body {
     border-radius: 20px; /* Larger rounded corners */
     max-width: 80%; /* Adjust the width as needed */
     position: relative; /* Ensure it can be positioned centrally */
-    animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1);; /* Apply the slide-in animation */
+    animation: slideInFromBottom 1s ease-out; /* Apply the slide-in animation */
 }
 
 /* Centering the resumeSection */
@@ -168,5 +173,4 @@ html, body {
     bottom: 0;
     right: 0;
     animation: slideInFromBottom 2s ease-out; /* Apply the slide-in animation */
-}
 }
