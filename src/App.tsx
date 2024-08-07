@@ -7,11 +7,12 @@ import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   const resumePoints = [
-    "Hi there I'm literally about to be 24",
+    "Hi I'm literally about to turn 24",
     "I would do really great at your company",
-    "Please, I've been unemployed so long I forget what it's like to not be",
-    "gonna make this look better i promise zac/omkar",
-    "Last version 12:10am wed aug 7",
+    "Please, I've been unemployed so long",
+    "Now with a cool scrolling animation that lets you scroll the card past the navbar",
+    "Going to change it so that when you click on a new page, it will slide the tile out before the new one comes in",
+    "Last edit was on Wed Aug 7 1:12",
   ];
 
   // The states can be updated to include more pages

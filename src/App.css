@@ -24,59 +24,57 @@
 
 /* Prevent scrollbars from appearing */
 html, body {
-    
     height: 100%; /* Ensure the body takes full height of the viewport */
     margin: 0; /* Remove default margin */
 
 
-    /* Navbar Styles */
-    .navbar-custom {
-        background-color: white; /* Dark background for the navbar */
-        height: 120px; /* Increased height for a thicker navbar */
-        padding: 0 30px; /* Padding to space out from edges */
-        
-    }
-    .navbar-brand-custom {
-        color: black; /* Light gray text color */
-        font-size: 2.8rem; /* Larger font size */
-        font-weight: bold; /* Bold text */
-        margin-right: 20px; /* Add horizontal spacing */
-    }
+/* Navbar Styles */
+.navbar-custom {
+    background-color: white; /* Dark background for the navbar */
+    height: 8vw; /* Increased height for a thicker navbar */
+    padding: 0 2vw; /* Padding to space out from edges */
+}
 
-    .navbar-links {
-        position: fixed;
-        top: 0;
-        display: flex;
-        align-items: center; /* Center items vertically */
-        margin-right: 20px; /* Add horizontal spacing */
-    }
+.navbar-brand-custom {
+    color: black; /* Light gray text color */
+    font-weight: bold; /* Bold text */
+    margin-right: 2vw; /* Add horizontal spacing */
+}
 
-    .nav-link-custom {
-        color: rgba(0, 0, 0, 0.387); /* Light gray text color */
-        font-size: 3.8rem; /* Larger font size */
-        font-weight: bold; /* Bold text */
-        padding: 15px 25px; /* Larger padding for clickable area */
-        border: 2px solid transparent; /* Transparent border initially */
-        border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-        margin-right: 20px; /* Add horizontal spacing */
-        transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
-        transform: scale(1); /* Scale the element back to its original size */
-    }
-    .nav-link-custom:hover {
-        color: black; /* Dark text color on hover */
-        border-bottom: 2px solid black; /* Dark border color on hover */
-        transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
-        transform: scale(0.99); /* Scale the element on hover */
-    }
+.navbar-links {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 2vw; /* Add horizontal spacing */
+}
 
-    .nav-link-custom:active,
-    .nav-link-custom:focus {
-        border-bottom: 2px solid black; /* Black border on active and focus */
-        transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
-        transform: scale(0.9); /* Scale the element on hover */
-    }
+.nav-link-custom {
+    color: rgba(0, 0, 0, 0.387); /* Light gray text color */
+    font-size: 3.0vw; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 1.5vw 2vw; /* Larger padding for clickable area */
+    border: 0.2vw solid transparent; /* Transparent border initially */
+    border-radius: 0.8vw; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    margin-right: 2vw; /* Add horizontal spacing */
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(1); /* Scale the element back to its original size */
+}
 
+.nav-link-custom:hover {
+    color: black; /* Dark text color on hover */
+    border-bottom: 0.2vw solid black; /* Dark border color on hover */
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(0.99); /* Scale the element on hover */
+}
+
+.nav-link-custom:active,
+.nav-link-custom:focus {
+    border-bottom: 0.2vw solid black; /* Black border on active and focus */
+    transition: border-color 0.5s ease, transform 0.5s ease; /* Smooth transition for border color and transform */
+    transform: scale(0.9); /* Scale the element on hover */
+}
 }
 
 /* Resume Section Styles */
@@ -84,12 +82,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center; /* Center items vertically */
-    margin: 30px auto; /* Center horizontally with margin */
-    padding: 30px; /* Increased padding */
+    margin: 1vw auto; /* Center horizontally with margin */
+    padding: 1vw; /* Increased padding */
     background-color: white; /* Light background for contrast */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow for the section */
-    border-radius: 20px; /* Larger rounded corners */
-    max-width: 80%; /* Adjust the width as needed */
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.3); /* Deeper shadow for the section */
+    border-radius: 2vw; /* Larger rounded corners */
+    max-width: 80vw; /* Adjust the width as needed */
     position: relative; /* Ensure it can be positioned centrally */
     animation: slideInFromBottom 1s ease-out; /* Apply the slide-out animation */
 }
@@ -98,16 +96,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center; /* Center items vertically */
-    margin: 30px auto; /* Center horizontally with margin */
-    padding: 30px; /* Increased padding */
+    margin: 2vw auto; /* Center horizontally with margin */
+    padding: 2vw; /* Increased padding */
     background-color: white; /* Light background for contrast */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow for the section */
-    border-radius: 20px; /* Larger rounded corners */
-    max-width: 80%; /* Adjust the width as needed */
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.3); /* Deeper shadow for the section */
+    border-radius: 2vw; /* Larger rounded corners */
+    max-width: 80vw; /* Adjust the width as needed */
     position: relative; /* Ensure it can be positioned centrally */
     animation: slideOutToBottom 1s ease-out; /* Apply the slide-out animation */
 }
-
 
 @keyframes slideOutToBottom {
     from {
@@ -120,16 +117,15 @@ html, body {
     }
 }
 
-
 .resumeSection ul {
     list-style-type: none; /* Remove default bullet points */
     padding: 0; /* Remove default padding */
-    margin-top: 20px; /* Add spacing between section and list */
+    margin-top: 2vw; /* Add spacing between section and list */
 }
 
 .resumeSection li {
-    font-size: 1.8rem; /* Larger font size for list items */
-    margin-bottom: 10px; /* Spacing between list items */
+    font-size: 1.8vw; /* Larger font size for list items */
+    margin-bottom: 1vw; /* Spacing between list items */
     display: flex; /* Display list items as flex */
     align-items: center; /* Center items vertically */
 }
@@ -137,13 +133,12 @@ html, body {
 .resumeSection li::before {
     content: "\2022"; /* Add bullet point character */
     color: rgba(0, 0, 0, 0.8); /* Semi-opacity for modern look */
-    font-size: 1.5rem; /* Adjust bullet point size */
-    margin-right: 10px; /* Spacing between bullet point and text */
+    font-size: 1.5vw; /* Adjust bullet point size */
+    margin-right: 1vw; /* Spacing between bullet point and text */
 }
 
-
 .resumeSection .resumeButton {
-    font-size: 2.5rem; /* Larger font size for the resume button */
+    font-size: 2.5vw; /* Larger font size for the resume button */
     font-weight: bold; /* Bold font weight for the resume button */
 }
 
@@ -157,7 +152,7 @@ html, body {
 
 .resumeLeft {
     flex: 1;
-    padding-right: 30px; /* Increased padding */
+    padding-right: 3vw; /* Increased padding */
 }
 
 .resumeRight {
@@ -168,24 +163,24 @@ html, body {
 }
 
 .resumeLeft h2 {
-    font-size: 3rem; /* Much larger font size for the header */
+    font-size: 3vw; /* Much larger font size for the header */
     font-weight: bold; /* Bold font weight */
     color: #333; /* Dark text color for readability */
     text-align: center; /* Center-align the header */
-    margin-bottom: 20px; /* Increased margin for spacing */
+    margin-bottom: 2vw; /* Increased margin for spacing */
 }
 
 .resumeLeft ul {
     list-style-type: disc;
-    padding-left: 30px; /* Increased padding */
+    padding-left: 3vw; /* Increased padding */
     color: rgba(0, 0, 0, 0.8); /* Semi-opacity for modern look */
     font-family: 'Arial', sans-serif; /* Clean, modern font */
     line-height: 1.6; /* Increased line height for better readability */
 }
 
 .resumeLeft li {
-    font-size: 1.8rem; /* Larger font size for list items */
-    margin-bottom: 10px; /* Closer spacing between list items */
+    font-size: 1.8vw; /* Larger font size for list items */
+    margin-bottom: 1vw; /* Closer spacing between list items */
 }
 
 .photoRightContainer {
@@ -194,8 +189,8 @@ html, body {
     align-items: center;
     justify-content: center;
     position: relative; /* Use relative positioning for the pseudo-element */
-    max-width: 80%; /* Adjust as needed */
-    padding: 50px; /* Increased padding */
+    max-width: 80vw; /* Adjust as needed */
+    padding: 5vw; /* Increased padding */
     overflow: hidden; /* Ensure image does not overflow */
 }
 
@@ -208,20 +203,18 @@ html, body {
     height: 100%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     pointer-events: none; /* Allow interactions with the image */
-    
 }
 
 .photoRightImage {
     width: 100%;
     height: auto;
-    border-radius: 20px; /* Larger rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shading */
-    
+    border-radius: 2vw; /* Larger rounded corners */
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Subtle shading */
 }
 
 .photoRightCaption {
-    margin-top: 15px;
-    font-size: 1.5rem; /* Larger font size for the caption */
+    margin-top: 1.5vw;
+    font-size: 1.5vw; /* Larger font size for the caption */
     text-align: center;
     font-family: 'Arial', sans-serif; /* Clean, modern font */
 }
@@ -232,7 +225,7 @@ html, body {
     left: 0;
     bottom: 0;
     right: 0;
-    size: 1.5rem; /* Larger font size */
+    font-size: 1.5vw; /* Larger font size */
     animation: slideInFromBottom 2s ease-out; /* Apply the slide-in animation */
 }
 
@@ -243,8 +236,8 @@ html, body {
 
 .nav-icon {
     color: rgba(0, 0, 0, 0.387); /* Light gray text color */
-    font-size: 2.8rem; /* Larger font size */
-    padding: 15px; /* Larger padding for clickable area */
+    font-size: 2.8vw; /* Larger font size */
+    padding: 1.5vw; /* Larger padding for clickable area */
     transition: color 0.3s ease; /* Smooth transition for color */
 }
 
@@ -253,5 +246,5 @@ html, body {
 }
 
 .nav-icon:not(:last-child) {
-    margin-right: 20px; /* Add horizontal spacing */
+    margin-right: 2vw; /* Add horizontal spacing */
 }
