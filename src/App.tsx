@@ -13,38 +13,50 @@ const App: React.FC = () => {
     "gonna make this look better i promise zac/omkar",
     "Last version 12:10am wed aug 7",
   ];
-  const [homeVis, setHomeVis] = useState(true);
-  const [projectVis, setProjectVis] = useState(false);
-  const [resumeVis, setResumeVis] = useState(false);
+
+  // The pages can be Home, Projects, Resume
+  const [pageVis, setPageVis] = useState("Home");
 
   function setPageVisFunc() {
-    if (resumeVis)
-      return (
-        <div>
-          <PdfDisplay resumeUrl="mingLiuResume.pdf" />
-        </div>
-      );
-    if (homeVis)
-      return (
-        <ResumeSection
-          imageUrl="mingLiu.png" // Update this path if necessary
-          altText="didn't load for some reason"
-          caption="Most recent photo of me"
-          resumePoints={resumePoints}
-        ></ResumeSection>
-      );
-    if (projectVis) return <>Link to some of my projets I guess</>;
+    switch (pageVis) {
+      case "PROJECT":
+        return <>Link to some of my projects I guess</>;
+      case "HOME":
+        return (
+          <ResumeSection
+            imageUrl="mingLiu.png" // Update this path if necessary
+            altText="didn't load for some reason"
+            caption="Most recent photo of me"
+            resumePoints={resumePoints}
+          ></ResumeSection>
+        );
+      case "RESUME":
+        return (
+          <div>
+            <PdfDisplay resumeUrl="mingLiuResume.pdf" />
+          </div>
+        );
+      default:
+        return (
+          <ResumeSection
+            imageUrl="mingLiu.png" // Update this path if necessary
+            altText="didn't load for some reason"
+            caption="Most recent photo of me"
+            resumePoints={resumePoints}
+          ></ResumeSection>
+        );
+    }
   }
 
   return (
     <>
       <Navbar
-        homeState={homeVis}
-        homeHook={setHomeVis}
-        projectState={projectVis}
-        projectHook={setProjectVis}
-        resumeState={resumeVis}
-        resumeHook={setResumeVis}
+        pageVis={pageVis}
+        setPageVis={setPageVis}
+        githubLink={""}
+        googleDriveLink={""}
+        linkedinLink={""}
+        emailLink={"mailto:mingliu232@gmail.com"} // Update the emailLink prop
       />
       {setPageVisFunc()}
       <div></div>

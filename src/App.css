@@ -1,3 +1,13 @@
+/* Hide scrollbar for all elements */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar { /* WebKit browsers */
+    display: none;
+}
+
 /* Keyframes for the slide-in animation */
 @keyframes slideInFromBottom {
     from {
@@ -10,68 +20,45 @@
     }
 }
 
+/* Reset default styles */
+
 /* Prevent scrollbars from appearing */
 html, body {
     overflow: hidden;
     height: 100%; /* Ensure the body takes full height of the viewport */
     margin: 0; /* Remove default margin */
 
-/* Navbar Styles */
-.navbar-custom {
-    background-color: #f9f9f9;; /* Dark background for the navbar */
-    height: 120px; /* Increased height for a thicker navbar */
-    padding: 0 30px; /* Padding to space out from edges */
-    
-    animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1);; /* Apply the slide-in animation */
-  }
-  
-  .navbar-brand-custom {
-    color: black; /* Light gray text color */
-    font-size: 3.8rem; /* Larger font size */
-    font-weight: bold; /* Bold text */
-  }
-  
-  .navbar-links {
-    display: flex;
-    align-items: center; /* Center items vertically */
-  }
-  
-  .nav-link-custom {
-    color: rgba(0, 0, 0, 0.387); /* Light gray text color */
-    font-size: 3.8rem; /* Larger font size */
-    font-weight: bold; /* Bold text */
-    padding: 15px 25px; /* Larger padding for clickable area */
-    border: 2px solid transparent; /* Transparent border initially */
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-    margin-right: -2px; /* Remove space between buttons */
-  }
-  
-  .nav-link-custom:hover,
-  .nav-link-custom:focus {
-    background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover/focus */
-    color: rgba(0, 0, 0, 0.836); /* Black text color on hover/focus */
-    border-bottom-color: black;
-    
-  }
-  
-  .nav-dropdown-custom .dropdown-menu {
-    background-color: #333; /* Dark background for the dropdown menu */
-    color: #eee; /* Light gray text color */
-  }
-  
-  .nav-dropdown-custom .dropdown-item {
-    color: #eee; /* Light gray text color */
-  }
-  
-  .nav-dropdown-custom .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover */
-    color: #000; /* Black text color on hover */
-  }
-  
-}
-  
+    /* Navbar Styles */
+    .navbar-custom {
+        background-color: #f9f9f9; /* Dark background for the navbar */
+        height: 120px; /* Increased height for a thicker navbar */
+        padding: 0 30px; /* Padding to space out from edges */
+        animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1); /* Apply the slide-in animation */
+    }
+    .navbar-brand-custom {
+        color: black; /* Light gray text color */
+        font-size: 3.8rem; /* Larger font size */
+        font-weight: bold; /* Bold text */
+        margin-right: 20px; /* Add horizontal spacing */
+    }
 
+    .navbar-links {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        margin-right: 20px; /* Add horizontal spacing */
+    }
+
+    .nav-link-custom {
+        color: rgba(0, 0, 0, 0.387); /* Light gray text color */
+        font-size: 3.8rem; /* Larger font size */
+        font-weight: bold; /* Bold text */
+        padding: 15px 25px; /* Larger padding for clickable area */
+        border: 2px solid transparent; /* Transparent border initially */
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+        margin-right: 20px; /* Add horizontal spacing */
+    }
+}
 
 /* Resume Section Styles */
 .resumeSection {
@@ -86,6 +73,11 @@ html, body {
     max-width: 80%; /* Adjust the width as needed */
     position: relative; /* Ensure it can be positioned centrally */
     animation: slideInFromBottom 1s ease-out; /* Apply the slide-in animation */
+}
+
+.resumeSection .resumeButton {
+    font-size: 2.5rem; /* Larger font size for the resume button */
+    font-weight: bold; /* Bold font weight for the resume button */
 }
 
 /* Centering the resumeSection */
@@ -161,14 +153,13 @@ html, body {
 .photoRightCaption {
     margin-top: 15px;
     font-size: 1.5rem; /* Larger font size for the caption */
-    color: rgba(0, 0, 0, 0.7); /* Semi-opacity for modern look */
     text-align: center;
     font-family: 'Arial', sans-serif; /* Clean, modern font */
 }
 
 /* Footer Text */
-.footer-text{
-    position: absolute;
+.footer-text {
+    text-align: center; /* Center-align the text */
     left: 0;
     bottom: 0;
     right: 0;
