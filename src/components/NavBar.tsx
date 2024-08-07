@@ -1,8 +1,13 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import React, { useState } from "react";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGoogleDrive,
+  FaGithub,
+} from "react-icons/fa";
 import "../App.css"; // Import your global CSS file
 
 interface Props {
@@ -62,24 +67,20 @@ function NavBar({
             >
               Resume
             </Nav.Link>
-            <NavDropdown
-              title="Socials"
-              id="basic-nav-dropdown"
-              className="nav-dropdown-custom"
-            >
-              <NavDropdown.Item href={`mailto:${emailLink}`}>
-                Email
-              </NavDropdown.Item>
-              <NavDropdown.Item href={linkedinLink}>LinkedIn</NavDropdown.Item>
-              <NavDropdown.Item href={googleDriveLink}>
-                Google Drive
-              </NavDropdown.Item>
-              <NavDropdown.Item href={githubLink}>GitHub</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                What else do I add
-              </NavDropdown.Item>
-            </NavDropdown>
+            <div className="nav-icons">
+              <a href={`mailto:${emailLink}`} className="nav-icon">
+                <FaEnvelope />
+              </a>
+              <a href={linkedinLink} className="nav-icon">
+                <FaLinkedin />
+              </a>
+              <a href={googleDriveLink} className="nav-icon">
+                <FaGoogleDrive />
+              </a>
+              <a href={githubLink} className="nav-icon">
+                <FaGithub />
+              </a>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

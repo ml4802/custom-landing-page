@@ -7,9 +7,7 @@ interface Props {
 function PdfDisplay({ imageUrl }: Props) {
   return (
     <div className="resumeSection">
-      <div className="photoRightContainer">
-        <img src={imageUrl} alt="resume" className="photoRightImage" />
-      </div>
+      <img src={imageUrl} alt="resume" className="photoRightImage" />
     </div>
   );
 }

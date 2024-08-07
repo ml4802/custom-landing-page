@@ -28,53 +28,54 @@ html, body {
     height: 100%; /* Ensure the body takes full height of the viewport */
     margin: 0; /* Remove default margin */
 
-    /* Navbar Styles */
-    .navbar-custom {
-        background-color: #f9f9f9; /* Dark background for the navbar */
-        height: 120px; /* Increased height for a thicker navbar */
-        padding: 0 30px; /* Padding to space out from edges */
-        animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1); /* Apply the slide-in animation */
-    }
-    .navbar-brand-custom {
-        color: black; /* Light gray text color */
-        font-size: 2.8rem; /* Larger font size */
-        font-weight: bold; /* Bold text */
-        margin-right: 20px; /* Add horizontal spacing */
-    }
 
-    .navbar-links {
-        display: flex;
-        align-items: center; /* Center items vertically */
-        margin-right: 20px; /* Add horizontal spacing */
-    }
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #f9f9f9; /* Dark background for the navbar */
+    height: 120px; /* Increased height for a thicker navbar */
+    padding: 0 30px; /* Padding to space out from edges */
+    animation: slideInFromBottom 0.7s cubic-bezier(0.1, 0.1, 0.1, 1); /* Apply the slide-in animation */
+}
+.navbar-brand-custom {
+    color: black; /* Light gray text color */
+    font-size: 2.8rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-right: 20px; /* Add horizontal spacing */
+}
 
-    .nav-link-custom {
-        color: rgba(0, 0, 0, 0.387); /* Light gray text color */
-        font-size: 3.8rem; /* Larger font size */
-        font-weight: bold; /* Bold text */
-        padding: 15px 25px; /* Larger padding for clickable area */
-        border: 2px solid transparent; /* Transparent border initially */
-        border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-        margin-right: 20px; /* Add horizontal spacing */
-    }
+.navbar-links {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 20px; /* Add horizontal spacing */
+}
 
-    .nav-link-custom:hover {
-        background-color: #f9f9f9; /* Light background on hover */
-        color: black; /* Dark text color on hover */
-        border-bottom: 2px solid black; /* Dark border color on hover */
-        transition: border-color 0.5s ease; /* Smooth transition for border color */
-    }
-    .nav-link-custom:active,
-    .nav-link-custom:focus {
-        border-bottom: 2px solid black; /* Black border on active and focus */
-    }
+.nav-link-custom {
+    color: rgba(0, 0, 0, 0.387); /* Light gray text color */
+    font-size: 3.8rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 15px 25px; /* Larger padding for clickable area */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    margin-right: 20px; /* Add horizontal spacing */
+}
+
+.nav-link-custom:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+    color: black; /* Dark text color on hover */
+    border-bottom: 2px solid black; /* Dark border color on hover */
+    transition: border-color 0.5s ease; /* Smooth transition for border color */
+}
+.nav-link-custom:active,
+.nav-link-custom:focus {
+    border-bottom: 2px solid black; /* Black border on active and focus */
+}
 }
 
 /* Resume Section Styles */
 .resumeSection {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; /* Center items vertically */
     margin: 30px auto; /* Center horizontally with margin */
     padding: 30px; /* Increased padding */
@@ -178,4 +179,24 @@ html, body {
     bottom: 0;
     right: 0;
     animation: slideInFromBottom 2s ease-out; /* Apply the slide-in animation */
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-icon {
+    color: rgba(0, 0, 0, 0.387); /* Light gray text color */
+    font-size: 2.8rem; /* Larger font size */
+    padding: 15px; /* Larger padding for clickable area */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-icon:hover {
+    color: black; /* Dark text color on hover */
+}
+
+.nav-icon:not(:last-child) {
+    margin-right: 20px; /* Add horizontal spacing */
 }

@@ -57,14 +57,14 @@ const App: React.FC = () => {
       <Navbar
         pageVis={pageVis}
         setPageVis={setPageVis}
-        githubLink={""}
-        googleDriveLink={""}
-        linkedinLink={""}
+        githubLink={"https://github.com/ml4802"}
+        googleDriveLink={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+        linkedinLink={"https://www.linkedin.com/in/mingliu232/"}
         emailLink={"mailto:mingliu232@gmail.com"} // Update the emailLink prop
       />
       {setPageVisFunc()}
       <div></div>
-      <Footer bottomText="🚧 Still under construction improvements daily. Made with React and JS 🚧" />
+      <Footer bottomText="🚧 Under construction, improvements daily. Made with React and JS <3" />
     </>
   );
 };
