@@ -12,7 +12,7 @@ const App: React.FC = () => {
     "gonna make this look better i promise zac/omkar",
     "click on the resume tab to see resume and click on it again to make it go away (took me an hour)",
   ];
-  const [homeVis, setHomeVis] = useState(false);
+  const [homeVis, setHomeVis] = useState(true);
   const [projectVis, setProjectVis] = useState(false);
   const [resumeVis, setResumeVis] = useState(false);
 
@@ -23,7 +23,7 @@ const App: React.FC = () => {
           <PdfDisplay resumeUrl="mingLiuResume.pdf" />
         </div>
       );
-    else
+    if (homeVis)
       return (
         <ResumeSection
           imageUrl="mingLiu.png" // Update this path if necessary

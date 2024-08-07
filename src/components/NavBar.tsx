@@ -16,11 +16,12 @@ interface Props {
 }
 
 //Idea is to toggle the state everytime they click
-const toggleHook =
-  (aState: boolean, aHook: React.Dispatch<React.SetStateAction<boolean>>) =>
-  () => {
-    aHook(!aState);
-  };
+//const toggleHookOn =
+// (aState: boolean, aHook: React.Dispatch<React.SetStateAction<boolean>>) =>
+// () => {
+
+// aHook(!aState);
+// };
 
 function NavBar({
   homeState,
@@ -42,21 +43,33 @@ function NavBar({
             <Nav.Link
               href="#home"
               className="nav-link-custom"
-              onClick={toggleHook(homeState, homeHook)}
+              onClick={() => {
+                homeHook(true);
+                projectHook(false);
+                resumeHook(false);
+              }}
             >
               Home
             </Nav.Link>
             <Nav.Link
               href="#projects"
               className="nav-link-custom"
-              onClick={toggleHook(projectState, projectHook)}
+              onClick={() => {
+                homeHook(false);
+                projectHook(true);
+                resumeHook(false);
+              }}
             >
               Projects
             </Nav.Link>
             <Nav.Link
               href="#resume"
               className="nav-link-custom"
-              onClick={toggleHook(resumeState, resumeHook)}
+              onClick={() => {
+                homeHook(false);
+                projectHook(false);
+                resumeHook(true);
+              }}
             >
               Resume
             </Nav.Link>
