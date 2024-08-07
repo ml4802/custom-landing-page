@@ -62,10 +62,10 @@ html, body {
     margin-right: 20px; /* Add horizontal spacing */
 }
 
-.nav-link-custom:hover {
-    background-color: #f9f9f9; /* Light background on hover */
-    color: black; /* Dark text color on hover */
-    border-bottom: 2px solid black; /* Dark border color on hover */
+.nav-link-custom:hover,
+.nav-link-custom:focus {
+    color: black; /* Dark text color on hover or focus */
+    border-bottom: 2px solid black; /* Dark border color on hover or focus */
     transition: border-color 0.5s ease; /* Smooth transition for border color */
 }
 .nav-link-custom:active,

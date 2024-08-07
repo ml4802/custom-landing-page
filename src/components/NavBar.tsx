@@ -32,7 +32,6 @@ function NavBar({
     <Navbar expand="lg" className="navbar-custom">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
         <Nav className="navbar-links">
           <Nav.Link
             href="#home"
