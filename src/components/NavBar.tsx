@@ -38,7 +38,7 @@ function NavBar({
         <Nav className="navbar-links">
           <Nav.Link
             href="#home"
-            className={`nav-link-custom ${
+            className={`nav-link-custom first ${
               activeLink === "HOME" ? "active" : ""
             }`}
             onClick={() => handleLinkClick("HOME")}
