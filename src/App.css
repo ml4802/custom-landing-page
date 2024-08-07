@@ -1,13 +1,13 @@
 /* Navbar Styles */
 .navbar-custom {
-    background-color: #333; /* Dark background for the navbar */
+    background-color: white; /* Dark background for the navbar */
     height: 80px; /* Increased height for a thicker navbar */
     padding: 0 30px; /* Padding to space out from edges */
   }
   
   .navbar-brand-custom {
     color: #eee; /* Light gray text color */
-    font-size: 1.8rem; /* Larger font size */
+    font-size: 3.8rem; /* Larger font size */
     font-weight: bold; /* Bold text */
   }
   
@@ -18,7 +18,7 @@
   
   .nav-link-custom {
     color: #eee; /* Light gray text color */
-    font-size: 1.8rem; /* Larger font size */
+    font-size: 3.8rem; /* Larger font size */
     font-weight: bold; /* Bold text */
     padding: 15px 25px; /* Larger padding for clickable area */
     border: 2px solid transparent; /* Transparent border initially */
@@ -30,7 +30,7 @@
   .nav-link-custom:hover,
   .nav-link-custom:focus {
     background-color: rgba(255, 255, 255, 0.2); /* Light gray background on hover/focus */
-    color: #000; /* Black text color on hover/focus */
+    color: white; /* Black text color on hover/focus */
     border-color: #000; /* Black border color on hover/focus */
   }
   

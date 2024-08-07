@@ -8,6 +8,7 @@ const App: React.FC = () => {
     "Hi there I'm literally about to be 24",
     "I would do really great at your company",
     "Please, I've been unemployed so long I forget what it's like to not be",
+    "I can gurantee I can speel",
   ];
 
   return (
@@ -16,10 +17,10 @@ const App: React.FC = () => {
       <ResumeSection
         imageUrl="public/mingLiu.png" // Update this path if necessary
         altText="Dashing image of Ming"
-        caption="At a tech conference"
+        caption="Most recent photo of me"
         resumePoints={resumePoints}
       />
-      <h1>Website still in development, learning react at the moment</h1>
+      <h1>Website under construction</h1>
     </div>
   );
 };

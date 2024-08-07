@@ -9,7 +9,7 @@ function NavBar() {
     <Navbar expand="lg" className="navbar-custom">
       <Container>
         <Navbar.Brand href="#home" className="navbar-brand-custom">
-          Brand
+          Ming Liu
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
