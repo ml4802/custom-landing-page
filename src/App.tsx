@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import ResumeSection from "./components/ResumeSection";
 import PdfDisplay from "./components/PdfDisplay";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 const App: React.FC = () => {
   const resumePoints = [
@@ -27,12 +28,16 @@ const App: React.FC = () => {
     switch (pageVis) {
       case "PROJECT":
         return (
-          <h1>
-            This will be a 6 tiled type of thing with summaries of my projects,
-            where each tile will sort of fly in from the bottom and stack up to
-            be 2x3
-          </h1>
+          <>
+            <Projects></Projects>
+            <h1>
+              This will be a 6 tiled type of thing with summaries of my
+              projects, where each tile will sort of fly in from the bottom and
+              stack up to be 2x3
+            </h1>
+          </>
         );
+
       case "HOME":
         return (
           <>

@@ -46,6 +46,7 @@ html, body {
     height: 8vw; /* Increased height for a thicker navbar */
     padding: 0 2vw; /* Padding to space out from edges */
     margin-left: 10vw;
+    z-index: 0;
 
 }
 
@@ -263,3 +264,47 @@ html, body {
 .nav-icon:not(:last-child) {
     margin-right: 2vw; /* Add horizontal spacing */
 }
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    grid-template-rows: repeat(3, 1fr); /* Create 3 rows */
+    grid-gap: 20px; /* Add spacing between grid items */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw; /* Add spacing between resume section and projects container */
+    z-index: 100;
+}
+
+.project-tile {
+    width: 100%; /* Fill the entire width of the column */
+    height: 100%; /* Fill the entire height of the column */
+    margin: 10px; /* Adjust the margin as needed */
+    padding: 20px;
+    background-color: white; /* Light background for contrast */
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.3); /* Deeper shadow for the tile */
+    border-radius: 2vw; /* Larger rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    display: flex;
+    flex-direction: column; /* Display title and summary in a column */
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile:hover {
+    transform: scale(1.05); /* Scale the tile on hover */
+}
+
+.project-tile h2 {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 10px; /* Spacing between title and description */
+    text-align: center;
+}
+
+.project-tile p {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: rgba(0, 0, 0, 0.8); /* Semi-opacity for modern look */
+    text-align: center;
+}
+
